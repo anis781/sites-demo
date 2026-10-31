@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Serrurerie de la Gare — Serrurier à Aulnay-sous-Bois | 01 48 66 34 95</title>
+<meta name="description" content="Serrurerie de la Gare, 3 bis route de Bondy, 93600 Aulnay-sous-Bois : ouverture de porte, changement de serrure, blindage, porte de garage, clés. Devis gratuit sur demande. Tél. 01 48 66 34 95.">
+<meta name="robots" content="noindex">
+<style>
+:root{
+  --ink:#0d1b2a; --muted:#4a5a6b; --bg:#f2f6fa; --card:#ffffff;
+  --navy:#0f2c4c; --navy-2:#173d66; --blue:#1f6fd1; --yellow:#ffc928; --yellow-dark:#e6ad00; --green:#1c7c4a; --line:#d8e2ec;
+  --radius:12px; --max:1120px;
+  --font: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{font-family:var(--font);color:var(--ink);background:var(--bg);line-height:1.6;font-size:1rem}
+a{color:var(--blue)}
+.container{width:100%;max-width:var(--max);margin:0 auto;padding:0 1.25rem}
+.skip{position:absolute;left:-999px;top:0}.skip:focus{left:1rem;top:1rem;background:#fff;color:var(--ink);padding:.6rem 1rem;border-radius:8px;z-index:99}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+.ico{width:1.2em;height:1.2em;flex:none;fill:none;stroke:currentColor;stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round}
+
+/* Top strip + header */
+.strip{background:var(--yellow);color:var(--ink);font-size:.85rem;font-weight:700;text-align:center;padding:.4rem 1rem}
+.strip .long{display:none}
+@media (min-width:600px){.strip .long{display:inline}}
+.strip .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--green);margin-right:.4rem;vertical-align:1px;box-shadow:0 0 0 3px rgba(28,124,74,.25)}
+header.top{position:sticky;top:0;z-index:10;background:var(--navy);color:#fff;box-shadow:0 2px 12px rgba(0,0,0,.18)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px;gap:1rem}
+.logo{display:flex;align-items:center;gap:.65rem;text-decoration:none;color:#fff;line-height:1.1}
+.logo .mark{width:40px;height:40px;border-radius:10px;background:var(--yellow);position:relative;flex:none}
+.logo .mark::before{content:"";position:absolute;left:9px;top:9px;width:22px;height:22px;border:5px solid var(--navy);border-right-color:transparent;border-bottom-color:transparent;border-radius:50%;transform:rotate(-45deg)}
+.logo .mark::after{content:"";position:absolute;left:18px;top:20px;width:5px;height:13px;background:var(--navy);border-radius:2px}
+.logo b{display:block;font-size:1.1rem;letter-spacing:.01em}
+.logo small{display:block;font-size:.72rem;color:#b9cce2;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+.nav ul{display:none;list-style:none;gap:1.4rem}
+.nav ul a{text-decoration:none;color:#dce7f3;font-weight:500;font-size:.95rem}
+.nav ul a:hover{color:var(--yellow)}
+.call-mini{display:inline-flex;align-items:center;gap:.45rem;background:var(--yellow);color:var(--ink);text-decoration:none;padding:.55rem .9rem;border-radius:8px;font-weight:800;font-size:.92rem;min-height:44px;white-space:nowrap}
+.call-mini .num{display:none}
+
+/* Hero */
+.hero{position:relative;overflow:hidden;color:#fff;padding:3rem 0 3.5rem;
+  background:
+    radial-gradient(circle at 90% 10%, rgba(31,111,209,.55), transparent 45%),
+    linear-gradient(160deg,var(--navy-2),var(--navy) 60%,#0a1f36)}
+.hero::before{content:"";position:absolute;inset:0;opacity:.08;
+  background-image:linear-gradient(#fff 1px,transparent 1px),linear-gradient(90deg,#fff 1px,transparent 1px);background-size:36px 36px}
+.hero .container{position:relative}
+.badge-urgent{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,201,40,.14);border:1px solid rgba(255,201,40,.55);color:var(--yellow);font-weight:800;font-size:.85rem;letter-spacing:.06em;text-transform:uppercase;padding:.4rem .8rem;border-radius:999px;margin-bottom:1.1rem}
+.hero h1{font-size:clamp(2.1rem,8vw,3.8rem);line-height:1.08;font-weight:800;letter-spacing:-.01em;margin-bottom:1rem}
+.hero h1 span{color:var(--yellow)}
+.hero p.lead{font-size:1.1rem;color:#d3e0ee;max-width:36rem;margin-bottom:1.8rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:.9rem 1.4rem;border-radius:10px;font-weight:800;text-decoration:none;font-size:1rem;transition:transform .15s,background .15s;min-height:50px;border:2px solid transparent;cursor:pointer;font-family:inherit}
+.btn:hover{transform:translateY(-2px)}
+.btn-call{background:var(--yellow);color:var(--ink);box-shadow:0 10px 30px -8px rgba(255,201,40,.6)}
+.btn-call:hover{background:var(--yellow-dark)}
+.btn-big{font-size:1.2rem;padding:1.1rem 1.6rem;min-height:62px;width:100%;max-width:420px}
+.btn-big small{display:block;font-size:.8rem;font-weight:600;opacity:.85}
+.btn-big .txt{text-align:left;line-height:1.2}
+.btn-light{border-color:#fff;color:#fff;background:transparent}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-2)}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem;align-items:center}
+.trust{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;margin-top:2rem;max-width:560px}
+.trust li{display:flex;gap:.55rem;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:.65rem .75rem;font-size:.9rem;color:#e7eef6}
+.trust li .ico{color:var(--yellow)}
+.hero-grid{display:grid;gap:2.5rem;align-items:center}
+/* van / tools illustration */
+
+/* Sections */
+section{padding:4.25rem 0}
+.section-head{margin-bottom:2.2rem}
+.eyebrow{display:inline-block;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--blue)}
+.section-head h2{font-size:clamp(1.8rem,5.5vw,2.5rem);line-height:1.15;margin-top:.3rem;font-weight:800;letter-spacing:-.01em}
+.section-head p{color:var(--muted);margin-top:.6rem;max-width:40rem}
+
+/* Services */
+.services{display:grid;gap:1rem}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.35rem;display:flex;flex-direction:column;gap:.55rem;border-top:4px solid var(--blue)}
+.svc.urgent{border-top-color:#c73a2c}
+.svc .head{display:flex;align-items:center;gap:.75rem}
+.svc .ic{display:grid;place-items:center;width:44px;height:44px;border-radius:10px;background:#e6effa;color:var(--navy)}
+.svc.urgent .ic{background:#fbe6e3;color:#a32b1f}
+.svc h3{font-size:1.1rem;line-height:1.25}
+.svc p{color:var(--muted);font-size:.95rem}
+.svc .price{margin-top:auto;padding-top:.6rem;border-top:1px dashed var(--line);display:flex;align-items:baseline;justify-content:space-between;gap:.5rem}
+.svc .price span{font-size:.85rem;color:var(--muted)}
+.svc .price strong{font-size:1.45rem;color:var(--navy)}
+.note{font-size:.85rem;color:var(--muted);margin-top:1.2rem}
+
+/* Zone */
+#zone{background:var(--navy);color:#e7eef6}
+#zone .eyebrow{color:var(--yellow)}
+#zone .section-head p{color:#bfd0e3}
+.zone-grid{display:grid;gap:2rem;align-items:center}
+.towns{list-style:none;display:flex;flex-wrap:wrap;gap:.55rem}
+.towns li{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:.4rem .85rem;font-size:.92rem}
+.towns li.main{background:var(--yellow);color:var(--ink);border-color:var(--yellow);font-weight:800}
+
+/* Reviews */
+.reviews{display:grid;gap:1rem}
+.review{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.35rem;position:relative}
+.review .stars{color:#a06d00;font-size:1.05rem;letter-spacing:.1em}
+.review blockquote{margin:.5rem 0 .9rem;font-size:1rem}
+.review footer{all:unset;display:flex;align-items:center;gap:.65rem;font-size:.88rem;color:var(--muted)}
+.review .av{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;background:var(--blue)}
+.review:nth-child(2) .av{background:var(--green)}
+.review:nth-child(3) .av{background:#8a4fbf}
+.sample{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:#fff4cc;color:#7a5a00;border:1px solid #f0d675;border-radius:6px;padding:.1rem .45rem;margin-bottom:1rem}
+.score{display:flex;align-items:center;gap:.8rem;margin-bottom:1.4rem;flex-wrap:wrap}
+.score strong{font-size:2.2rem;color:var(--navy);line-height:1}
+
+/* Contact */
+#contact{background:var(--card)}
+.contact-grid{display:grid;gap:1.5rem}
+.call-panel{background:linear-gradient(160deg,var(--navy-2),var(--navy));color:#fff;border-radius:16px;padding:1.6rem}
+.call-panel h3{font-size:1.3rem;margin-bottom:.5rem}
+.call-panel p{color:#d3e0ee;margin-bottom:1rem}
+.call-panel .big{display:block;font-size:2rem;font-weight:800;color:var(--yellow);text-decoration:none;margin:.3rem 0 1rem;letter-spacing:.02em}
+.call-panel ul{list-style:none;display:grid;gap:.45rem;margin-top:1.2rem;font-size:.95rem;color:#e7eef6}
+.call-panel a{color:#ffe08a}
+.call-panel a.btn{color:var(--ink)}
+.form-card{border:1px solid var(--line);border-radius:16px;padding:1.6rem;background:var(--bg)}
+.form-card h3{font-size:1.3rem;margin-bottom:.3rem}
+form{display:grid;gap:1rem;margin-top:1rem}
+.row{display:grid;gap:1rem}
+label{display:block;font-weight:700;font-size:.92rem;margin-bottom:.3rem}
+label .opt{font-weight:400;color:var(--muted)}
+input,select,textarea{width:100%;font:inherit;padding:.75rem .85rem;border:2px solid #b7c6d6;border-radius:10px;background:#fff;color:var(--ink);min-height:48px}
+textarea{min-height:110px;resize:vertical}
+input:focus-visible,select:focus-visible,textarea:focus-visible{border-color:var(--blue);outline:3px solid var(--yellow);outline-offset:1px}
+.check{display:flex;gap:.6rem;align-items:flex-start;font-size:.9rem;font-weight:400}
+.check input{width:22px;min-height:22px;height:22px;margin-top:.15rem;flex:none}
+.form-msg{font-weight:700;color:var(--green)}
+.small-muted{font-size:.85rem;color:var(--muted)}
+
+/* Footer */
+body>footer{background:#081a2d;color:#b9cce2;padding:2.5rem 0 6.5rem;font-size:.92rem}
+body>footer strong{color:#fff}
+body>footer a{color:#ffe08a}
+.foot-grid{display:grid;gap:1.4rem}
+.demo-note{margin-top:1.6rem;padding-top:1.2rem;border-top:1px solid rgba(255,255,255,.14);font-size:.82rem;color:#9fb3c9}
+.demo-note strong{color:var(--yellow)}
+
+/* Sticky call bar */
+.sticky-cta{position:fixed;left:0;right:0;bottom:0;display:flex;gap:.6rem;padding:.65rem 1rem calc(.65rem + env(safe-area-inset-bottom));background:var(--navy);z-index:20;box-shadow:0 -6px 20px rgba(0,0,0,.25)}
+.sticky-cta .btn{padding:.7rem;font-size:1rem;min-height:52px}
+.sticky-cta .btn-call{flex:2}
+.sticky-cta .btn-light{flex:1}
+
+@media (min-width:600px){
+  .services{grid-template-columns:repeat(2,1fr)}
+  .row{grid-template-columns:1fr 1fr}
+  .call-mini .num{display:inline}
+  .call-mini .lbl{display:none}
+  .btn-big{width:auto}
+}
+@media (min-width:720px){
+  .reviews{grid-template-columns:repeat(3,1fr)}
+  .foot-grid{grid-template-columns:2fr 1fr 1fr}
+}
+@media (min-width:960px){
+  .nav ul{display:flex}
+  .hero{padding:5rem 0 5.5rem}
+  .hero-grid{grid-template-columns:1.2fr .8fr}
+  .services{grid-template-columns:repeat(3,1fr)}
+  .zone-grid{grid-template-columns:1.1fr .9fr}
+  .contact-grid{grid-template-columns:.85fr 1.15fr}
+  .sticky-cta{display:none}
+  body>footer{padding-bottom:2.5rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+/* Locksmith additions */
+html{scroll-padding-top:80px}
+.call-top{display:inline-flex;align-items:center;gap:.5rem;background:var(--yellow);color:var(--ink);text-decoration:none;padding:.6rem 1.1rem;border-radius:10px;font-weight:900;font-size:1.05rem;min-height:48px;white-space:nowrap;box-shadow:0 6px 18px -6px rgba(255,201,40,.7)}
+.call-top:hover{background:var(--yellow-dark)}
+.call-top .num{display:none}
+.hours-chip{display:inline-block;font-size:.85rem;color:#d3e0ee;background:rgba(255,255,255,.08);border:1px dashed rgba(255,255,255,.3);padding:.35rem .7rem;border-radius:8px;margin-top:1.2rem}
+.lock-art{position:relative;width:min(340px,70vw);aspect-ratio:1/1;justify-self:center}
+.lock-art .ring{position:absolute;inset:0;border-radius:50%;background:radial-gradient(circle,rgba(255,201,40,.22),transparent 65%);border:2px dashed rgba(255,255,255,.2)}
+.lock-art .shackle{position:absolute;left:30%;right:30%;top:14%;height:38%;border:22px solid #c9d3dd;border-bottom:none;border-radius:999px 999px 0 0}
+.lock-art .body{position:absolute;left:20%;right:20%;top:44%;height:40%;border-radius:18px;background:linear-gradient(145deg,#ffd75e,#e6ad00);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.lock-art .hole{position:absolute;left:50%;top:58%;width:26px;height:26px;border-radius:50%;background:var(--navy);transform:translateX(-50%)}
+.lock-art .hole::after{content:"";position:absolute;left:8px;top:18px;width:10px;height:26px;background:var(--navy);border-radius:0 0 4px 4px}
+.lock-art .card2{position:absolute;left:-4px;top:8%;background:var(--green);color:#fff;border-radius:12px;padding:.55rem .85rem;font-size:.82rem;font-weight:700;box-shadow:0 14px 30px rgba(0,0,0,.3)}
+.lock-art .card{position:absolute;right:-6px;bottom:4%;background:#fff;color:var(--ink);border-radius:12px;padding:.65rem .9rem;box-shadow:0 14px 30px rgba(0,0,0,.3);font-size:.82rem;line-height:1.3}
+.lock-art .card strong{display:block;font-size:1.05rem;color:var(--navy)}
+.svc-cta{background:linear-gradient(160deg,var(--navy-2),var(--navy));color:#fff;border-top-color:var(--yellow)!important}.svc-cta p{color:#d3e0ee}.svc-cta .btn{padding:.7rem 1rem;min-height:46px}
+.svc .tag{margin-top:auto;padding-top:.6rem;border-top:1px dashed var(--line);font-size:.88rem;font-weight:700;color:var(--navy)}
+/* Rapid block */
+#rapide{background:var(--card)}
+.rapid{display:grid;gap:1.5rem;align-items:center;background:linear-gradient(135deg,#fff7d6,#fff);border:2px solid var(--yellow);border-radius:18px;padding:1.6rem}
+.rapid h2{font-size:clamp(1.6rem,5vw,2.2rem);line-height:1.15;font-weight:800}
+.rapid ul{list-style:none;display:grid;gap:.6rem;margin-top:1rem}
+.rapid li{display:flex;gap:.6rem;align-items:flex-start}
+.rapid li .ico{color:var(--green);margin-top:.2rem}
+.rapid .act{display:grid;gap:.7rem}
+/* Zone map */
+.zone-map{position:relative;width:min(360px,84vw);aspect-ratio:1;justify-self:center;border-radius:50%;
+  background:radial-gradient(circle,transparent 0 22%,rgba(255,255,255,.18) 22.3% 22.8%,transparent 23% 45%,rgba(255,255,255,.18) 45.3% 45.8%,transparent 46% 68%,rgba(255,255,255,.14) 68.3% 68.8%,transparent 69%),radial-gradient(circle,#1b4877,#0f2c4c 70%)}
+.zone-map .center{position:absolute;left:50%;top:50%;width:18px;height:18px;border-radius:50%;background:var(--yellow);transform:translate(-50%,-50%);box-shadow:0 0 0 8px rgba(255,201,40,.25)}
+.zone-map span{position:absolute;font-size:.72rem;font-weight:700;color:#fff;background:rgba(0,0,0,.35);padding:.12rem .45rem;border-radius:6px;white-space:nowrap}
+.zone-map .lbl{left:50%;top:calc(50% + 16px);transform:translateX(-50%);background:var(--yellow);color:var(--ink)}
+/* Gallery */
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:.8rem}
+.tile{position:relative;aspect-ratio:4/3;border-radius:12px;overflow:hidden;display:grid;place-items:center;color:rgba(255,255,255,.9)}
+.tile .ico{width:42px;height:42px;stroke-width:1.6}
+.tile figcaption{position:absolute;left:0;right:0;bottom:0;padding:.45rem .6rem;font-size:.78rem;font-weight:700;background:linear-gradient(transparent,rgba(0,0,0,.55));color:#fff}
+.tile .ex{position:absolute;top:.5rem;left:.5rem;font-size:.65rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.9);color:#5a4500;border-radius:5px;padding:.08rem .4rem}
+.t1{background:linear-gradient(135deg,#2c4a6e,#5b7da3)}.t2{background:linear-gradient(135deg,#6b5b3e,#b39563)}.t3{background:linear-gradient(135deg,#34495e,#7f8c8d)}
+.t4{background:linear-gradient(135deg,#1f5f4a,#4fa284)}.t5{background:linear-gradient(135deg,#5a3d6b,#9a7bb0)}.t6{background:linear-gradient(135deg,#7a3b2e,#c0735f)}
+/* About */
+.about{display:grid;gap:1.5rem}
+.about p{color:var(--muted);margin-bottom:.9rem;max-width:44rem}
+.about .facts{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:1.3rem;display:grid;gap:.6rem;align-content:start}
+.about .facts div{display:flex;gap:.6rem;align-items:flex-start}
+.about .facts .ico{color:var(--blue);margin-top:.2rem}
+.map{width:100%;height:320px;border:0;border-radius:14px;display:block;margin-top:1.5rem;background:#dfe7ef}
+.form-card form .btn{width:100%}
+.demo-banner{display:inline-block;margin-top:1rem;font-size:.75rem;color:#9fb3c9;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:999px;padding:.25rem .8rem}
+.demo-banner b{color:var(--yellow);font-weight:700}
+.legal{margin-top:1rem;font-size:.82rem;color:#9fb3c9}
+body>footer{padding-bottom:2.5rem}
+@media (max-width:599px){.logo b{font-size:.95rem;white-space:nowrap}.nav{gap:.5rem}.call-top{padding:.55rem .85rem;font-size:1rem}.logo{gap:.5rem;min-width:0}.logo small{font-size:.62rem;letter-spacing:.08em}.logo .mark{width:34px;height:34px}.logo .mark::before{left:6px;top:6px}.logo .mark::after{left:15px;top:17px}.lock-art{width:min(230px,58vw)}.hero .btns .btn-light{width:100%;max-width:420px}}
+@media (min-width:600px){.call-top .num{display:inline}.call-top .lbl{display:none}.gallery{grid-template-columns:repeat(3,1fr)}}
+@media (min-width:720px){.rapid{grid-template-columns:1.4fr 1fr;padding:2.2rem}}
+@media (min-width:960px){.about{grid-template-columns:1.4fr 1fr}.services{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Aller au contenu</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-doc" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></symbol>
+  <symbol id="i-door" viewBox="0 0 24 24"><path d="M5 21V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v17M3 21h18"/><circle cx="15" cy="12" r="1"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="11" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-key" viewBox="0 0 24 24"><circle cx="7.5" cy="15.5" r="4.5"/><path d="m10.7 12.3 9.3-9.3M16 7l3 3M14 9l2 2"/></symbol>
+  <symbol id="i-garage" viewBox="0 0 24 24"><path d="M3 21V9l9-6 9 6v12"/><path d="M7 21v-8h10v8M7 16h10"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-camera" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></symbol>
+</svg>
+
+<header class="top">
+  <div class="container nav">
+    <a class="logo" href="#main" aria-label="Serrurerie de la Gare, retour en haut"><span class="mark" aria-hidden="true"></span><span><b>Serrurerie de la Gare</b><small>Serrurier · Aulnay</small></span></a>
+    <nav aria-label="Navigation principale">
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#zone">Zone</a></li>
+        <li><a href="#avis">Avis</a></li>
+        <li><a href="#realisations">Réalisations</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="call-top" href="tel:0148663495" aria-label="Appeler la Serrurerie de la Gare au 01 48 66 34 95"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><span class="lbl">Appeler</span><span class="num">01 48 66 34 95</span></a>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="container hero-grid">
+      <div>
+        <span class="badge-urgent"><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg>Serrurier à Aulnay-sous-Bois</span>
+        <h1 id="hero-title">Porte claquée, serrure bloquée&nbsp;? <span>Un serrurier rapide et fiable.</span></h1>
+        <p class="lead">Serrurerie de la Gare intervient à Aulnay-sous-Bois et dans les communes voisines : ouverture de porte, changement de serrure, blindage, porte de garage et reproduction de clés.</p>
+        <div class="btns">
+          <a class="btn btn-call btn-big" href="tel:0148663495" aria-label="Appeler le 01 48 66 34 95">
+            <svg class="ico" aria-hidden="true" style="width:1.6em;height:1.6em"><use href="#i-phone"/></svg>
+            <span class="txt">Appeler maintenant<small>01 48 66 34 95</small></span>
+          </a>
+          <a class="btn btn-light" href="#contact">Devis gratuit</a>
+        </div>
+        <ul class="trust" aria-label="Points clés">
+          <li><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg>Intervention rapide</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg>Devis gratuit sur demande</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg>Basé à Aulnay-sous-Bois</li>
+          <li><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg>Appel direct</li>
+        </ul>
+        <span class="hours-chip">Horaires : [à confirmer]</span>
+      </div>
+      <div class="lock-art" aria-hidden="true">
+        <div class="ring"></div>
+        <div class="shackle"></div>
+        <div class="body"></div>
+        <div class="hole"></div>
+        <div class="card2">Serrurerie de la Gare</div>
+        <div class="card"><strong>Devis gratuit</strong>sur demande</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" aria-labelledby="services-title">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Nos services</span>
+        <h2 id="services-title">Nos prestations de serrurerie</h2>
+        <p>Du dépannage d'urgence à la sécurisation de votre logement. Tarifs : devis gratuit sur demande.</p>
+      </div>
+      <div class="services">
+        <article class="svc urgent">
+          <div class="head"><span class="ic" aria-hidden="true"><svg class="ico"><use href="#i-door"/></svg></span><h3>Ouverture de porte</h3></div>
+          <p>Porte claquée ou fermée à clé, clés perdues ou cassées dans la serrure : ouverture de votre porte pour vous permettre de rentrer chez vous.</p>
+          <div class="tag">Devis gratuit sur demande</div>
+        </article>
+        <article class="svc">
+          <div class="head"><span class="ic" aria-hidden="true"><svg class="ico"><use href="#i-lock"/></svg></span><h3>Changement de serrure</h3></div>
+          <p>Remplacement de cylindre ou de serrure complète après un vol de clés, un déménagement ou une serrure usée.</p>
+          <div class="tag">Devis gratuit sur demande</div>
+        </article>
+        <article class="svc">
+          <div class="head"><span class="ic" aria-hidden="true"><svg class="ico"><use href="#i-shield"/></svg></span><h3>Blindage de porte</h3></div>
+          <p>Renforcement de votre porte d'entrée pour mieux protéger votre logement contre les tentatives d'effraction.</p>
+          <div class="tag">Devis gratuit sur demande</div>
+        </article>
+        <article class="svc">
+          <div class="head"><span class="ic" aria-hidden="true"><svg class="ico"><use href="#i-garage"/></svg></span><h3>Porte de garage</h3></div>
+          <p>Serrure, verrouillage et dépannage de porte de garage.</p>
+          <div class="tag">Devis gratuit sur demande</div>
+        </article>
+        <article class="svc">
+          <div class="head"><span class="ic" aria-hidden="true"><svg class="ico"><use href="#i-key"/></svg></span><h3>Clés et reproduction</h3></div>
+          <p>Reproduction de clés et double de clés pour votre domicile ou votre local.</p>
+          <div class="tag">Devis gratuit sur demande</div>
+        </article>
+        <article class="svc svc-cta">
+          <h3>Un autre besoin en serrurerie&nbsp;?</h3>
+          <p>Expliquez-nous votre situation par téléphone ou via le formulaire.</p>
+          <div class="btns" style="margin-top:auto"><a class="btn btn-call" href="tel:0148663495"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler</a><a class="btn btn-light" href="#contact">Devis gratuit</a></div>
+        </article>
+      </div>
+      <p class="note">Liste des prestations à valider avec l'artisan. Aucun tarif n'est affiché : devis gratuit sur demande.</p>
+    </div>
+  </section>
+
+  <section id="rapide" aria-labelledby="rapide-title">
+    <div class="container">
+      <div class="rapid">
+        <div>
+          <span class="eyebrow">Intervention rapide</span>
+          <h2 id="rapide-title">Bloqué devant votre porte&nbsp;? Appelez directement.</h2>
+          <ul>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Un appel suffit : expliquez votre situation, on vous indique la marche à suivre.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Un serrurier local, basé 3 bis route de Bondy à Aulnay-sous-Bois.</span></li>
+            <li><svg class="ico" aria-hidden="true"><use href="#i-check"/></svg><span>Devis gratuit sur demande, avant toute intervention.</span></li>
+          </ul>
+        </div>
+        <div class="act">
+          <a class="btn btn-call btn-big" href="tel:0148663495" style="max-width:none"><svg class="ico" aria-hidden="true" style="width:1.5em;height:1.5em"><use href="#i-phone"/></svg><span class="txt">Appeler<small>01 48 66 34 95</small></span></a>
+          <p class="small-muted" style="text-align:center">Horaires : [à confirmer]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="zone" aria-labelledby="zone-title">
+    <div class="container zone-grid">
+      <div>
+        <div class="section-head" style="margin-bottom:1.4rem">
+          <span class="eyebrow">Zone d'intervention</span>
+          <h2 id="zone-title">Aulnay-sous-Bois et communes voisines</h2>
+          <p>Installée 3 bis route de Bondy à Aulnay-sous-Bois, la Serrurerie de la Gare se déplace à Aulnay et dans les communes alentour.</p>
+        </div>
+        <ul class="towns" aria-label="Communes voisines">
+          <li class="main">Aulnay-sous-Bois</li>
+          <li>Sevran</li><li>Villepinte</li><li>Le Blanc-Mesnil</li><li>Bondy</li>
+          <li>Livry-Gargan</li><li>Les Pavillons-sous-Bois</li>
+        </ul>
+        <p class="small-muted" style="color:#bfd0e3;margin-top:1.2rem">Liste indicative des communes voisines, à confirmer. Votre commune n'apparaît pas&nbsp;? Appelez pour vérifier.</p>
+      </div>
+      <div class="zone-map" role="img" aria-label="Schéma illustratif d'Aulnay-sous-Bois et des communes voisines">
+        <span class="center"></span>
+        <span class="lbl">Aulnay-sous-Bois</span>
+        <span style="left:6%;top:30%">Le Blanc-Mesnil</span>
+        <span style="right:10%;top:36%">Sevran</span>
+        <span style="left:52%;top:12%">Villepinte</span>
+        <span style="left:18%;top:72%">Bondy</span>
+        <span style="right:6%;top:68%">Livry-Gargan</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="avis" aria-labelledby="reviews-title">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Avis clients</span>
+        <h2 id="reviews-title">Ce que disent les clients</h2>
+        <p>Emplacement prévu pour les avis Google de la Serrurerie de la Gare.</p>
+      </div>
+      <span class="sample">[Exemple — à remplacer par de vrais avis Google]</span>
+      <div class="reviews">
+        <figure class="review">
+          <span class="sample" style="margin-bottom:.4rem">[Exemple — à remplacer par de vrais avis Google]</span>
+          <blockquote><p>« Texte d'exemple : ici s'affichera un avis client réel concernant une ouverture de porte. »</p></blockquote>
+          <figcaption><footer><span class="av" aria-hidden="true">?</span><span><strong style="color:var(--ink)">Nom du client</strong> · exemple</span></footer></figcaption>
+        </figure>
+        <figure class="review">
+          <span class="sample" style="margin-bottom:.4rem">[Exemple — à remplacer par de vrais avis Google]</span>
+          <blockquote><p>« Texte d'exemple : ici s'affichera un avis client réel concernant un changement de serrure. »</p></blockquote>
+          <figcaption><footer><span class="av" aria-hidden="true">?</span><span><strong style="color:var(--ink)">Nom du client</strong> · exemple</span></footer></figcaption>
+        </figure>
+        <figure class="review">
+          <span class="sample" style="margin-bottom:.4rem">[Exemple — à remplacer par de vrais avis Google]</span>
+          <blockquote><p>« Texte d'exemple : ici s'affichera un avis client réel concernant une reproduction de clés. »</p></blockquote>
+          <figcaption><footer><span class="av" aria-hidden="true">?</span><span><strong style="color:var(--ink)">Nom du client</strong> · exemple</span></footer></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="realisations" aria-labelledby="gal-title" style="background:var(--card)">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Réalisations</span>
+        <h2 id="gal-title">Galerie photos</h2>
+        <p>Emplacements prévus pour les photos de chantiers. Visuels d'exemple à remplacer.</p>
+      </div>
+      <div class="gallery">
+        <figure class="tile t1"><span class="ex">Exemple</span><svg class="ico" aria-hidden="true"><use href="#i-door"/></svg><figcaption>Ouverture de porte — exemple</figcaption></figure>
+        <figure class="tile t2"><span class="ex">Exemple</span><svg class="ico" aria-hidden="true"><use href="#i-lock"/></svg><figcaption>Changement de serrure — exemple</figcaption></figure>
+        <figure class="tile t3"><span class="ex">Exemple</span><svg class="ico" aria-hidden="true"><use href="#i-shield"/></svg><figcaption>Blindage de porte — exemple</figcaption></figure>
+        <figure class="tile t4"><span class="ex">Exemple</span><svg class="ico" aria-hidden="true"><use href="#i-garage"/></svg><figcaption>Porte de garage — exemple</figcaption></figure>
+        <figure class="tile t5"><span class="ex">Exemple</span><svg class="ico" aria-hidden="true"><use href="#i-key"/></svg><figcaption>Reproduction de clés — exemple</figcaption></figure>
+        <figure class="tile t6"><span class="ex">Exemple</span><svg class="ico" aria-hidden="true"><use href="#i-camera"/></svg><figcaption>Photo de l'atelier — exemple</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="presentation" aria-labelledby="about-title">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Présentation</span>
+        <h2 id="about-title">Votre serrurier de proximité</h2>
+      </div>
+      <div class="about">
+        <div>
+          <p>La Serrurerie de la Gare est une serrurerie située 3 bis route de Bondy, à Aulnay-sous-Bois (93600). Elle intervient pour l'ouverture de porte, le remplacement de serrures, le renforcement des portes d'entrée, les portes de garage et la reproduction de clés.</p>
+          <p>Que vous soyez bloqué dehors ou que vous souhaitiez renforcer la sécurité de votre logement, un simple appel permet d'expliquer votre besoin et d'obtenir un devis gratuit.</p>
+          <a class="btn btn-navy" href="tel:0148663495"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>01 48 66 34 95</a>
+        </div>
+        <div class="facts">
+          <div><svg class="ico" aria-hidden="true"><use href="#i-pin"/></svg><span>3 bis route de Bondy<br>93600 Aulnay-sous-Bois<br><small class="small-muted">Face au LCL</small></span></div>
+          <div><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg><a href="tel:0148663495">01 48 66 34 95</a></div>
+          <div><svg class="ico" aria-hidden="true"><use href="#i-clock"/></svg><span>Horaires : [à confirmer]</span></div>
+          <div><svg class="ico" aria-hidden="true"><use href="#i-doc"/></svg><span>Devis gratuit sur demande</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" aria-labelledby="contact-title">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Contact</span>
+        <h2 id="contact-title">Contactez la Serrurerie de la Gare</h2>
+        <p>Pour une urgence, le plus rapide est d'appeler. Pour un devis, laissez vos coordonnées.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="call-panel">
+          <h3>Appelez-nous</h3>
+          <p>Porte claquée, serrure à changer, besoin d'un devis&nbsp;?</p>
+          <a class="big" href="tel:0148663495">01 48 66 34 95</a>
+          <a class="btn btn-call" href="tel:0148663495" style="width:100%"><svg class="ico" aria-hidden="true"><use href="#i-phone"/></svg>Appeler maintenant</a>
+          <ul>
+            <li>Adresse : 3 bis route de Bondy, 93600 Aulnay-sous-Bois (face au LCL)</li>
+            <li>Horaires : [à confirmer]</li>
+            <li>Tarifs : devis gratuit sur demande</li>
+          </ul>
+        </div>
+        <div class="form-card">
+          <h3>Demande de devis gratuit</h3>
+          <p class="small-muted" id="devis-help">Formulaire de démonstration : aucune donnée n'est envoyée.</p>
+          <form id="devis" novalidate aria-describedby="devis-help">
+            <div class="row">
+              <div><label for="d-name">Nom</label><input id="d-name" name="name" autocomplete="name" required aria-required="true"></div>
+              <div><label for="d-tel">Téléphone</label><input id="d-tel" name="tel" type="tel" autocomplete="tel" inputmode="tel" required aria-required="true"></div>
+            </div>
+            <div class="row">
+              <div><label for="d-type">Besoin</label>
+                <select id="d-type" name="type"><option>Ouverture de porte</option><option>Changement de serrure</option><option>Blindage de porte</option><option>Porte de garage</option><option>Clés et reproduction</option><option>Autre</option></select></div>
+              <div><label for="d-city">Commune</label><input id="d-city" name="city" value="Aulnay-sous-Bois" autocomplete="address-level2"></div>
+            </div>
+            <div><label for="d-msg">Message <span class="opt">(facultatif)</span></label><textarea id="d-msg" name="msg" placeholder="Ex. : porte claquée, clés restées à l'intérieur"></textarea></div>
+            <button class="btn btn-navy" type="submit">Envoyer ma demande</button>
+            <p class="form-msg" id="devis-msg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+      <iframe class="map" title="Plan d'accès : 3 bis route de Bondy, 93600 Aulnay-sous-Bois" src="https://maps.google.com/maps?q=3%20bis%20route%20de%20Bondy%2C%2093600%20Aulnay-sous-Bois&amp;z=16&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#main"><span class="mark" aria-hidden="true"></span><span><b>Serrurerie de la Gare</b><small>Serrurier · Aulnay-sous-Bois</small></span></a>
+        <p style="margin-top:.7rem">Ouverture de porte, changement de serrure, blindage, porte de garage, clés et reproduction.</p>
+      </div>
+      <div><strong>Contact</strong><br><a href="tel:0148663495">01 48 66 34 95</a><br>3 bis route de Bondy<br>93600 Aulnay-sous-Bois<br>Horaires : [à confirmer]</div>
+      <div><strong>Services</strong><br>Ouverture de porte<br>Changement de serrure<br>Blindage de porte<br>Porte de garage<br>Clés et reproduction</div>
+    </div>
+    <p class="legal">[Mentions légales : SIRET et informations à compléter]</p>
+    <p class="demo-note">© <span id="y">2026</span> Serrurerie de la Gare. Avis et photos affichés : exemples à remplacer.<br><span class="demo-banner"><b>Démo</b> — site réalisé par AW Création Web</span></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  document.getElementById('y').textContent=new Date().getFullYear();
+  document.getElementById('devis').addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=document.getElementById('d-name').value.trim(), t=document.getElementById('d-tel').value.trim(), m=document.getElementById('devis-msg');
+    if(!n||!t){ m.style.color='#a32b1f'; m.textContent='Merci d\u2019indiquer votre nom et votre téléphone.'; (n?document.getElementById('d-tel'):document.getElementById('d-name')).focus(); return; }
+    m.style.color=''; m.textContent='Merci '+n+' ! Démonstration : aucune demande n\u2019a été envoyée.';
+  });
+})();
+</script>
+</body>
+</html>
